@@ -5,7 +5,7 @@
 # 6 = 61 = 6
 # 371 = 33 + 73 + 13 = 371
 
-num=153
+num=int(input("Enter a number: ")) 
 temp=num 
 n=temp
 s=0
@@ -19,6 +19,10 @@ while(num!=0):
     p=rem**count  #27 #125 #1 
     s=s+p    #27+125+1
     num=num//10  #0
-print(f"Armstrong number of {n} is {s}")      
 
-print(count) 
+    
+if(n==s):
+    print("Its a Armstrong number !")
+else:
+    print("Its not a Armstrong number ")    
+
